@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Super Quiz</string>
+    <string name="quizWelcome">Welcome to the Super Quiz!</string>
+    <string name="startQuiz">Start the Quiz</string>
+    <string name="difficulty">Choose Difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="questionNumberPlaceholder">Question #</string>
+    <string name="questionPlaceholder">Question</string>
+    <string name="answerAPlaceholder">Answer A</string>
+    <string name="answerBPlaceholder">Answer B</string>
+    <string name="answerCPlaceholder">Answer C</string>
+    <string name="answerDPlaceholder">Answer D</string>
+</resources>
