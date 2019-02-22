@@ -3,13 +3,18 @@
     <string name="quizWelcome">Welcome to the Super Quiz!</string>
     <string name="startQuiz">Start the Quiz</string>
     <string name="difficulty">Choose Difficulty</string>
-    <string name="easy">Easy</string>
-    <string name="medium">Medium</string>
-    <string name="hard">Hard</string>
+    <string name="displayEasy">Easy</string>
+    <string name="displayMedium">Medium</string>
+    <string name="displayHard">Hard</string>
+    <string name="easy">easy</string>
+    <string name="medium">medium</string>
+    <string name="hard">hard</string>
     <string name="questionNumberPlaceholder">Question #</string>
     <string name="questionPlaceholder">Question</string>
     <string name="answerAPlaceholder">Answer A</string>
     <string name="answerBPlaceholder">Answer B</string>
     <string name="answerCPlaceholder">Answer C</string>
     <string name="answerDPlaceholder">Answer D</string>
+    <string name="previousButton">&lt;- Back</string>
+    <string name="nextButton">Next -&gt;</string>
 </resources>

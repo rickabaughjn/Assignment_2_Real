@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         final Intent i = new Intent(this, QuizActivity.class);
 
-        alertDialog.setItems(new CharSequence[]{getString(R.string.easy),
-                        getString(R.string.medium), getString(R.string.hard)},
+        alertDialog.setItems(new CharSequence[]{getString(R.string.displayEasy),
+                        getString(R.string.displayMedium), getString(R.string.displayHard)},
             new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                     switch (which) {
