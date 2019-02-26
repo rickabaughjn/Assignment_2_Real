@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -20,6 +21,7 @@ public class QuizActivity extends AppCompatActivity {
     String[] line;
     Intent intent;
     String difficulty;
+    int orderedQuestionListIndex = 0;
 
     TextView questionNumber;
     TextView questionTextView;
@@ -43,7 +45,7 @@ public class QuizActivity extends AppCompatActivity {
         answerD = findViewById(R.id.answerD);
 
         readQuestions();
-        loadQuestion();
+        loadFirstQuestion();
     }
 
     private void readQuestions(){
@@ -102,7 +104,7 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
-    private void loadQuestion(){
+    private void loadFirstQuestion(){
         Question currentQuestion;
         int i = 0;
 
@@ -119,7 +121,7 @@ public class QuizActivity extends AppCompatActivity {
                 orderedQuestionList.add(currentQuestion);
                 questionList.remove(i);
                 i = questionList.size();
-                questionNumber.setText(String.format(Locale.US, "Question #%d", orderedQuestionList.size()));
+                questionNumber.setText(String.format(Locale.US, "Question #%d", orderedQuestionListIndex + 1));
             }
             else{
                 i++;
@@ -127,5 +129,54 @@ public class QuizActivity extends AppCompatActivity {
         }
     }
 
+    public void loadPrevQuestion(View view){
+        orderedQuestionListIndex--;
+        Question prevQuestion = orderedQuestionList.get(orderedQuestionListIndex);
 
+        questionTextView.setText(prevQuestion.getQuestion());
+        answerA.setText(prevQuestion.getAnswerA());
+        answerB.setText(prevQuestion.getAnswerB());
+        answerC.setText(prevQuestion.getAnswerC());
+        answerD.setText(prevQuestion.getAnswerD());
+        questionNumber.setText(String.format(Locale.US, "Question #%d", orderedQuestionListIndex + 1));
+    }
+
+    public void loadNextQuestion(View view){
+        Question currentQuestion;
+        int i = 0;
+
+        if (orderedQuestionListIndex + 1 > orderedQuestionList.size() - 1){
+            while (i < questionList.size()){
+                currentQuestion = questionList.get(i);
+
+                if ((currentQuestion.getDifficulty()).equals(intent.getStringExtra("difficulty"))){
+                    questionTextView.setText(currentQuestion.getQuestion());
+                    answerA.setText(currentQuestion.getAnswerA());
+                    answerB.setText(currentQuestion.getAnswerB());
+                    answerC.setText(currentQuestion.getAnswerC());
+                    answerD.setText(currentQuestion.getAnswerD());
+
+                    orderedQuestionList.add(currentQuestion);
+                    orderedQuestionListIndex++;
+                    questionList.remove(i);
+                    i = questionList.size();
+                }
+                else{
+                    i++;
+                }
+            }
+        }
+        else{
+            orderedQuestionListIndex++;
+            Question nextQuestion = orderedQuestionList.get(orderedQuestionListIndex);
+
+            questionTextView.setText(nextQuestion.getQuestion());
+            answerA.setText(nextQuestion.getAnswerA());
+            answerB.setText(nextQuestion.getAnswerB());
+            answerC.setText(nextQuestion.getAnswerC());
+            answerD.setText(nextQuestion.getAnswerD());
+        }
+
+        questionNumber.setText(String.format(Locale.US, "Question #%d", orderedQuestionListIndex + 1));
+    }
 }
