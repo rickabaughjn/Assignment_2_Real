@@ -17,4 +17,6 @@
     <string name="answerDPlaceholder">Answer D</string>
     <string name="previousButton">&lt;- Back</string>
     <string name="nextButton">Next -&gt;</string>
+    <string name="submitButton">Submit</string>
+    <string name="returnToTitleScreen">Return to Title Screen</string>
 </resources>

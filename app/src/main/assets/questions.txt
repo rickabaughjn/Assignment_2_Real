@@ -1,120 +1,120 @@
 difficulty:easy
 question:What is 2 + 2?
-answerA:3
-answerB:22
-answerC:4
-answerD:5
+answer:3
+answer:22
+answer:4
+answer:5
 correctAnswer:4
 ~
 difficulty:easy
 question:How many sides does a triangle have?
-answerA:3
-answerB:4
-answerC:5
-answerD:100
+answer:3
+answer:4
+answer:5
+answer:100
 correctAnswer:3
 ~
 difficulty:easy
 question:What color is the sky?
-answerA:Red
-answerB:Yellow
-answerC:Green
-answerD:Blue
+answer:Red
+answer:Yellow
+answer:Green
+answer:Blue
 correctAnswer:Blue
 ~
 difficulty:easy
 question:What is the capital of the United States?
-answerA:Paris
-answerB:Washington, D.C.
-answerC:Canberra
-answerD:Beijing
+answer:Paris
+answer:Washington, D.C.
+answer:Canberra
+answer:Beijing
 correctAnswer:Washington, D.C.
 ~
 difficulty:easy
 question:How many seconds are in a minute?
-answerA:60
-answerB:100
-answerC:30
-answerD:2
+answer:60
+answer:100
+answer:30
+answer:2
 correctAnswer:60
 ~
 difficulty:medium
 question:What is the capital of Spain?
-answerA:Santiago
-answerB:Lisbon
-answerC:Madrid
-answerD:Havana
+answer:Santiago
+answer:Lisbon
+answer:Madrid
+answer:Havana
 correctAnswer:Madrid
 ~
 difficulty:medium
 question:What animal is known as a "flying rat"?
-answerA:Pigeon
-answerB:Bat
-answerC:Locust
-answerD:Flying Squirrel
+answer:Pigeon
+answer:Bat
+answer:Locust
+answer:Flying Squirrel
 correctAnswer:Pigeon
 ~
 difficulty:medium
 question:What is the world's largest ocean?
-answerA:Indian Ocean
-answerB:Atlantic Ocean
-answerC:Arctic Ocean
-answerD:Pacific Ocean
+answer:Indian Ocean
+answer:Atlantic Ocean
+answer:Arctic Ocean
+answer:Pacific Ocean
 correctAnswer:Pacific Ocean
 ~
 difficulty:medium
 question:What is the square root of 144?
-answerA:12
-answerB:14
-answerC:16
-answerD:20736
+answer:12
+answer:14
+answer:16
+answer:20736
 correctAnswer:12
 ~
 difficulty:medium
 question:Who was the Roman goddess of love?
-answerA:Juno
-answerB:Venus
-answerC:Ceres
-answerD:Minerva
+answer:Juno
+answer:Venus
+answer:Ceres
+answer:Minerva
 correctAnswer:Venus
 ~
 difficulty:hard
 question:Which of these fruits is not botanically a berry?
-answerA:Banana
-answerB:Blueberry
-answerC:Eggplant
-answerD:Blackberry
+answer:Banana
+answer:Blueberry
+answer:Eggplant
+answer:Blackberry
 correctAnswer:Blackberry
 ~
 difficulty:hard
 question:What is the capital of Botswana?
-answerA:Kigali
-answerB:Gaborone
-answerC:Khartoum
-answerD:Serowe
+answer:Kigali
+answer:Gaborone
+answer:Khartoum
+answer:Serowe
 correctAnswer:Gaborone
 ~
 difficulty:hard
 question:What is the Beatles' best-selling single?
-answerA:She Loves You
-answerB:Hey Jude
-answerC:Can't Buy Me Love
-answerD:Help!
+answer:She Loves You
+answer:Hey Jude
+answer:Can't Buy Me Love
+answer:Help!
 correctAnswer:She Loves You
 ~
 difficulty:hard
 question:How many legs does a lobster have?
-answerA:6
-answerB:8
-answerC:10
-answerD:12
+answer:6
+answer:8
+answer:10
+answer:12
 correctAnswer:10
 ~
 difficulty:hard
 question:Which of these is not a real country?
-answerA:Nauru
-answerB:Comoros
-answerC:San Marcos
-answerD:Eswatini
+answer:Nauru
+answer:Comoros
+answer:San Marcos
+answer:Eswatini
 correctAnswer:San Marcos
 ~
